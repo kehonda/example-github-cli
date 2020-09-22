@@ -31,7 +31,7 @@ jobs:
           sudo apt install gh
       - name: login
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
         run: |
           gh auth login --with-token
       - name: gh help
