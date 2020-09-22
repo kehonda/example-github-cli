@@ -36,4 +36,4 @@ jobs:
           gh auth login --with-token
       - name: gh help
         run: |
-          gh help
+          gh --help
