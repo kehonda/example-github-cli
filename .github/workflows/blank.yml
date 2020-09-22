@@ -30,6 +30,8 @@ jobs:
           sudo apt update
           sudo apt install gh
       - name: login
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh auth login
       - name: gh help
